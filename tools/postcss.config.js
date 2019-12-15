@@ -38,5 +38,9 @@ module.exports = () => ({
       browsers: pkg.browserslist,
       autoprefixer: { flexbox: 'no-2009' },
     }),
+    require('postcss-import')(),
+    require('tailwindcss')(),
+    require('postcss-nested')(), // or require('postcss-nesting')
+    require('autoprefixer')(),
   ],
 });

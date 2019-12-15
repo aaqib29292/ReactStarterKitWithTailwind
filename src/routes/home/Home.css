@@ -9,6 +9,31 @@
 
 @import '../../components/variables.css';
 
+.bgRed {
+  @apply bg-red-900 m-10
+}
+
+.bgRedhover {
+  @apply bg-blue-700
+}
+
+.redNmargin {
+  @apply bgRed
+}
+
+.redNmargin:hover {
+  @apply bgRedhover
+}
+
+@screen md {
+  .redNmargin:hover {
+    @apply bg-green-900
+  }
+}
+
+
+
+
 .root {
   padding-left: 20px;
   padding-right: 20px;
